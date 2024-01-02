@@ -6,6 +6,80 @@ body{
     align-items: center;
 }
 
-p{
+a, p{
     font-family: 'Libre Franklin', sans-serif;
+}
+
+.links-div{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-div div{
+    margin-top: 1rem;
+}
+
+.underline-animation{
+    position: relative;
+    color: black;
+}
+
+.underline-animation,
+.underline-animation:hover,
+.underline-animation:focus,
+.underline-animation:active {
+    text-decoration: none;
+}
+
+.underline-animation::after {
+    content: "";
+    position: absolute;
+}
+
+.box-1 .underline-animation::after {
+    top: 95%;
+    height: 1px !important;
+    width: 90%;
+    left: 5%;
+    background-color: rgba(83, 83, 83, 0.6);
+    transition: 0.35s ease-out;
+}
+  
+.box-1:hover .underline-animation::after {
+    width: 120%;
+    left: -10%;
+    transition: 0.25s ease-in;
+}
+
+.box-2 .underline-animation::after {
+    top: 95%;
+    height: 1px !important;
+    width: 90%;
+    left: 5%;
+    background-color: rgba(83, 83, 83, 0.6);
+    transition: 0.35s ease-out;
+}
+  
+.box-2:hover .underline-animation::after {
+    width: 120%;
+    left: -10%;
+    transition: 0.25s ease-in;
+}
+
+.box-3 .underline-animation::after {
+    top: 95%;
+    height: 1px !important;
+    width: 90%;
+    left: 5%;
+    background-color: rgba(83, 83, 83, 0.6);
+    transition: 0.35s ease-out;
+}
+
+.box-3:hover .underline-animation::after {
+    width: 120%;
+    left: -10%;
+    transition: 0.25s ease-in;
 }
