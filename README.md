@@ -1,2 +1,2 @@
-# alexnder.me
-Personal website
+# alexnderbodnar.me
+Personal website for instagram bio
