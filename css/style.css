@@ -6,8 +6,10 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 a, p{
