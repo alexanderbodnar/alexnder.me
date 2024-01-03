@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,200&display=swap');
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: #E0E0E0;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    -webkit-font-smoothing: antialiased;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    -webkit-font-smoothing: antialiased; /* Firefox */
 }
 
 a, p{
@@ -94,14 +97,15 @@ a, p{
 
 .fade-in {
     opacity: 0;
+    -webkit-animation: fadeIn 1.5s ease-in-out forwards; /* Safari 4.0 - 8.0 */
     animation: fadeIn 1.5s ease-in-out forwards;
-  }
+}
   
-  @keyframes fadeIn {
+@keyframes fadeIn {
     from {
       opacity: 0;
     }
     to {
       opacity: 1;
     }
-  }
+}
